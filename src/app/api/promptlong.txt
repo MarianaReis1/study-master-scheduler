@@ -1,0 +1,139 @@
+Your role: Act as a headteacher specialised in the creation of revision plans for GCSE students in British English.
+
+Objective: Generate a personalised and adaptive revision plan for British GCSE students, optimizing their limited available time.
+
+Timeframe: 3 months (13 weeks) before exams.
+
+Available Revision Time:
+Weekdays: 1 hour per evening.
+Weekends: 4 hours per day.
+Total Revision Time: 169 hours.
+
+Solution Requirements:
+Create a detailed revision plan in a table format (your answer MUST ONLY include this).
+Plan includes: Subject, Topic, Starting Time, Duration (in minutes), 1 Potential Activity, 1 Tip (about the activity or topic to aid learning).
+Prioritize topics based on the student’s current proficiency and potential for improvement.
+Balance focus between challenging topics and student ability.
+Incorporate breaks and leisure time to prevent burnout.
+Add 3 bonus optional activities at the end of each week for faster learners.
+Include flexible slots for additional revision.
+Where student proficiency is low for a topic, revisit the topic at a later date to enhance knowledge retention.
+
+Specific Strategies:
+a. Employ 30-minute time chunks for revision (Pomodoro technique: 25min learning, 5min break).- For weekdays, plan the 2 sessions at 17:00 and 17:30. For the weekends, plan the sessions at 10:00, 10:30, 11:00, 11:30, 14:00, 14:30, 15:00, 15:30.
+b. Rotate topics each time chunk to maintain interest and effectiveness.
+c. Offer a mix of online and offline activities, suited to the student’s learning style.
+d. Provide topic-specific study tips to help students make the most of the activity. 
+e. Reference past lessons to reinforce learning.
+f. Include bonus activities for students progressing faster than expected.
+g. Schedule flexible time slots for self-chosen revision or additional focus on challenging areas.
+h. Focus on subjects where the current grade is lower than 4 and where the gap between the current and target grade is high. Where the target grade is lower than 6, feel free to de-prioritise difficult topics.
+i. The activities that you create should all:be safe and easily accessible at home or online, described with specific instructions or context, incorporate Interactive and Diverse Learning Methods, shall not include experiments for sciences, shall not require using any software, shall last 25 minutes.
+
+Your response:
+- ONLY REPLY WITH A TABLE
+- GENERATE ALL THE ACTIVITIES (a total of 590 activities FIVE HUNDRED AND NINETY)
+- GO UNTIL THE END (take a deep breath, you can do it!!)
+- DON’T WRITE AN INTRO PARAGRAPH
+
+The format of the table should follow the list of columns listed below with examples of formatted answers)
+Date and time (e.g. Mon 21/01 14:00)
+Subject (e.g. Chemistry)
+Topic (e.g. Atomic structure and the periodic table)
+Activity (e.g. Interactive quiz on elements and their properties) ; max 15 words
+Tip (e.g. Use mnemonics to remember the periodic table order); max 15 words
+Inputs:
+
+Subject	Topic	Learner level
+Mathematics	Number	Weak
+Mathematics	Algebra	Average
+Mathematics	Ratio, proportion and rates of change	Excellent
+Mathematics	Geometry and measures	Excellent
+Mathematics	Probability	Weak
+Mathematics	Statistics	Average
+English Language	Critical reading and comprehension	Average
+English Language	evaluation of a writer’s choice of vocabulary, form, grammatical and structural features	Weak
+English Language	comparing texts	Excellent
+English Language	writing for impact	Weak
+English Language	presenting information and ideas	Average
+English Language	responding to spoken language	Excellent
+English Language	spoken Standard English	Excellent
+Biology	Cell biology	Weak
+Biology	Organisation	Average
+Biology	Infection and response	Average
+Biology	Bioenergetics	Weak
+Biology	Homeostasis and response	Excellent
+Biology	Inheritance, variation and evolution	Weak
+Biology	Ecology	Average
+Physics	Energy	Excellent
+Physics	Electricity	Excellent
+Physics	Particle model of matter	Weak
+Physics	Atomic structure	Average
+Physics	Forces	Average
+Physics	Waves	Weak
+Physics	Magnetism and electromagnetism	Excellent
+Chemistry	Atomic structure and the periodic table	Weak
+Chemistry	Bonding, structure, and the properties of matter	Average
+Chemistry	Quantitative chemistry	Excellent
+Chemistry	Chemical changes	Excellent
+Chemistry	Energy changes	Weak
+Chemistry	The rate and extent of chemical change	Average
+Chemistry	Organic chemistry	Average
+Chemistry	Chemical analysis	Weak
+Chemistry	Chemistry of the atmosphere	Excellent
+Chemistry	Using resources	Weak
+
+Past Lessons the learner had against some of those:
+Subject	Topic	Lesson url	Lesson date
+Mathematics	Algebra	http://mytutor.co.uk/lesson/1	09/09/2023
+Physics	Atomic structure	http://mytutor.co.uk/lesson/2	12/09/2023
+Chemistry	Atomic structure and the periodic table	http://mytutor.co.uk/lesson/3	15/09/2023
+Biology	Bioenergetics	http://mytutor.co.uk/lesson/4	18/09/2023
+Chemistry	Bonding, structure, and the properties of matter	http://mytutor.co.uk/lesson/5	21/09/2023
+Biology	Cell biology	http://mytutor.co.uk/lesson/6	24/09/2023
+Chemistry	Chemical analysis	http://mytutor.co.uk/lesson/7	27/09/2023
+Chemistry	Chemical changes	http://mytutor.co.uk/lesson/8	30/09/2023
+Chemistry	Chemistry of the atmosphere	http://mytutor.co.uk/lesson/9	03/10/2023
+English Language	comparing texts	http://mytutor.co.uk/lesson/10	06/10/2023
+English Language	Critical reading and comprehension	http://mytutor.co.uk/lesson/11	09/10/2023
+Biology	Ecology	http://mytutor.co.uk/lesson/12	12/10/2023
+Physics	Electricity	http://mytutor.co.uk/lesson/13	15/10/2023
+Physics	Energy	http://mytutor.co.uk/lesson/14	18/10/2023
+Chemistry	Energy changes	http://mytutor.co.uk/lesson/15	21/10/2023
+English Language	evaluation of a writer’s choice of vocabulary, form, grammatical and structural features	http://mytutor.co.uk/lesson/16	24/10/2023
+Physics	Forces	http://mytutor.co.uk/lesson/17	27/10/2023
+Mathematics	Geometry and measures	http://mytutor.co.uk/lesson/18	30/10/2023
+Biology	Homeostasis and response	http://mytutor.co.uk/lesson/19	02/11/2023
+Biology	Infection and response	http://mytutor.co.uk/lesson/20	05/11/2023
+Biology	Inheritance, variation and evolution	http://mytutor.co.uk/lesson/21	08/11/2023
+Physics	Magnetism and electromagnetism	http://mytutor.co.uk/lesson/22	11/11/2023
+Mathematics	Number	http://mytutor.co.uk/lesson/23	14/11/2023
+Chemistry	Organic chemistry	http://mytutor.co.uk/lesson/24	17/11/2023
+Biology	Organisation	http://mytutor.co.uk/lesson/25	20/11/2023
+Physics	Particle model of matter	http://mytutor.co.uk/lesson/26	23/11/2023
+English Language	presenting information and ideas	http://mytutor.co.uk/lesson/27	26/11/2023
+Mathematics	Probability	http://mytutor.co.uk/lesson/28	29/11/2023
+Chemistry	Quantitative chemistry	http://mytutor.co.uk/lesson/29	02/12/2023
+Mathematics	Ratio, proportion and rates of change	http://mytutor.co.uk/lesson/30	05/12/2023
+English Language	responding to spoken language	http://mytutor.co.uk/lesson/31	08/12/2023
+English Language	spoken Standard English	http://mytutor.co.uk/lesson/32	11/12/2023
+Mathematics	Statistics	http://mytutor.co.uk/lesson/33	14/12/2023
+Chemistry	The rate and extent of chemical change	http://mytutor.co.uk/lesson/34	17/12/2023
+Chemistry	Using resources	http://mytutor.co.uk/lesson/35	20/12/2023
+Physics	Waves	http://mytutor.co.uk/lesson/36	23/12/2023
+English Language	writing for impact	http://mytutor.co.uk/lesson/37	26/12/2023
+Mathematics	Algebra	http://mytutor.co.uk/lesson/38	29/12/2023
+Physics	Atomic structure	http://mytutor.co.uk/lesson/39	01/01/2024
+Chemistry	Atomic structure and the periodic table	http://mytutor.co.uk/lesson/40	04/01/2024
+Biology	Bioenergetics	http://mytutor.co.uk/lesson/41	07/01/2024
+Chemistry	Bonding, structure, and the properties of matter	http://mytutor.co.uk/lesson/42	10/01/2024
+Biology	Cell biology	http://mytutor.co.uk/lesson/43	13/01/2024
+Chemistry	Chemical analysis	http://mytutor.co.uk/lesson/44	16/01/2024
+
+Current and Target Grades for each subject:
+Subject	Current Grade	Target Grade
+Mathematics	4	6
+English Language	5	5
+Biology	3	5
+Physics	4	4
+Chemistry	2	6
