@@ -1,0 +1,29 @@
+{
+    "role": "assistant",
+    "id": "chatcmpl-8iKwUCwQvUFD6Va9YkZGJWVerNepX",
+    "parentMessageId": "42d0de5d-0c33-4c83-bb63-eda98f97c204",
+    "text": "Sure, here's a revision plan for the next three months, focusing on Maths, English, and Science. The plan assumes that weekends are free days for rest or catching up on missed sessions.\n\n**Week 1-4:**\n\n_Monday (Maths)_: \n- Session 1: Algebra basics\n- Session 2: Quadratic equations\n- Session 3: Geometry basics\n- Session 4: Trigonometry\n\n_Tuesday (English)_:\n- Session 1: Reading comprehension\n- Session 2: Vocabulary building\n- Session 3: Grammar rules\n- Session 4: Essay writing\n\n_Wednesday (Science)_:\n- Session 1: Biology - Cell structure\n- Session 2: Chemistry - Atomic structure\n- Session 3: Physics - Forces and motion\n- Session 4: Biology - Human body systems\n\n_Thursday (Maths)_:\n- Session 1: Probability\n- Session 2: Statistics\n- Session 3: Functions\n- Session 4: Calculus basics\n\n_Friday (English)_:\n- Session 1: Poetry analysis\n- Session 2: Classic literature reading\n- Session 3: Debate skills\n- Session 4: Creative writing\n\n**Week 5-8: Revision and Practice Tests**\n\nRepeat the same schedule as weeks 1-4 but replace each session with relevant practice problems and past papers. Use online resources like Khan Academy, GCSE Bitesize, and Corbettmaths for Maths, Seneca Learning for Science, and NoRedInk for English.\n\n**Week 9-12: Mock Exams and Review**\n\n_Monday (Maths)_:\n- Session 1: Full-length mock exam\n- Session 2: Review mistakes\n- Session 3: Focus on weak areas\n- Session 4: Repeat difficult questions\n\n_Tuesday (English)_:\n- Session 1: Full-length mock exam\n- Session 2: Review mistakes\n- Session 3: Focus on weak areas\n- Session 4: Repeat difficult questions\n\n_Wednesday (Science)_:\n- Session 1: Full-length mock exam\n- Session 2: Review mistakes\n- Session 3: Focus on weak areas\n- Session 4: Repeat difficult questions\n\n_Thursday and Friday_: Repeat Monday-Wednesday schedule, focusing on the most challenging topics.\n\nRemember to take five-minute breaks between each Pomodoro session. During these breaks, relax your mind by stretching, walking around, or drinking water. After four sessions, take a longer break of 15-30 minutes. This will help prevent burnout and keep you focused during your study time.\n",
+    "detail": {
+        "id": "chatcmpl-8iKwUCwQvUFD6Va9YkZGJWVerNepX",
+        "object": "chat.completion",
+        "created": 1705577626,
+        "model": "gpt-4-0613",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here's a revision plan for the next three months, focusing on Maths, English, and Science. The plan assumes that weekends are free days for rest or catching up on missed sessions.\n\n**Week 1-4:**\n\n_Monday (Maths)_: \n- Session 1: Algebra basics\n- Session 2: Quadratic equations\n- Session 3: Geometry basics\n- Session 4: Trigonometry\n\n_Tuesday (English)_:\n- Session 1: Reading comprehension\n- Session 2: Vocabulary building\n- Session 3: Grammar rules\n- Session 4: Essay writing\n\n_Wednesday (Science)_:\n- Session 1: Biology - Cell structure\n- Session 2: Chemistry - Atomic structure\n- Session 3: Physics - Forces and motion\n- Session 4: Biology - Human body systems\n\n_Thursday (Maths)_:\n- Session 1: Probability\n- Session 2: Statistics\n- Session 3: Functions\n- Session 4: Calculus basics\n\n_Friday (English)_:\n- Session 1: Poetry analysis\n- Session 2: Classic literature reading\n- Session 3: Debate skills\n- Session 4: Creative writing\n\n**Week 5-8: Revision and Practice Tests**\n\nRepeat the same schedule as weeks 1-4 but replace each session with relevant practice problems and past papers. Use online resources like Khan Academy, GCSE Bitesize, and Corbettmaths for Maths, Seneca Learning for Science, and NoRedInk for English.\n\n**Week 9-12: Mock Exams and Review**\n\n_Monday (Maths)_:\n- Session 1: Full-length mock exam\n- Session 2: Review mistakes\n- Session 3: Focus on weak areas\n- Session 4: Repeat difficult questions\n\n_Tuesday (English)_:\n- Session 1: Full-length mock exam\n- Session 2: Review mistakes\n- Session 3: Focus on weak areas\n- Session 4: Repeat difficult questions\n\n_Wednesday (Science)_:\n- Session 1: Full-length mock exam\n- Session 2: Review mistakes\n- Session 3: Focus on weak areas\n- Session 4: Repeat difficult questions\n\n_Thursday and Friday_: Repeat Monday-Wednesday schedule, focusing on the most challenging topics.\n\nRemember to take five-minute breaks between each Pomodoro session. During these breaks, relax your mind by stretching, walking around, or drinking water. After four sessions, take a longer break of 15-30 minutes. This will help prevent burnout and keep you focused during your study time.\n"
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 124,
+            "completion_tokens": 546,
+            "total_tokens": 670
+        },
+        "system_fingerprint": null
+    }
+}

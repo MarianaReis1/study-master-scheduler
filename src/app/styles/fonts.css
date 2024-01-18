@@ -1,0 +1,112 @@
+@font-face {
+    font-family: FoundersGrotesk;
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/founders-grotesk-r-regular.woff2")
+        format("woff2"),
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/FoundersGrotesk-R-Regular.otf")
+        format("otf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: FoundersGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src:
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/founders-grotesk-r-italic.woff2")
+        format("woff2"),
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/FoundersGrotesk-R-Italic.otf")
+        format("otf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: FoundersGrotesk;
+    font-style: normal;
+    font-weight: 500;
+    src:
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/founders-grotesk-r-medium.woff2")
+        format("woff2"),
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/FoundersGrotesk-R-Medium.otf")
+        format("otf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: FoundersGrotesk;
+    font-style: italic;
+    font-weight: 500;
+    src:
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/founders-grotesk-r-medium-italic.woff2")
+        format("woff2"),
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/FoundersGrotesk-R-MediumItalic.otf")
+        format("otf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: FoundersGrotesk;
+    font-style: normal;
+    font-weight: 700;
+    src:
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/founders-grotesk-r-semibold.woff2")
+        format("woff2"),
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/FoundersGrotesk-R-Semibold.otf")
+        format("otf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: FoundersGrotesk;
+    font-style: italic;
+    font-weight: 700;
+    src:
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/founders-grotesk-r-semibold-italic.woff2")
+        format("woff2"),
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/FoundersGrotesk-R-SemiboldItalic.otf")
+        format("otf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: FoundersGrotesk;
+    font-style: normal;
+    font-weight: 800;
+    src:
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/founders-grotesk-r-bold.woff2")
+        format("woff2"),
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/FoundersGrotesk-R-Bold.otf")
+        format("otf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: FoundersGrotesk;
+    font-style: italic;
+    font-weight: 800;
+    src:
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/founders-grotesk-r-bold-italic.woff2")
+        format("woff2"),
+      url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/FoundersGrotesk-R-BoldItalic.otf")
+        format("otf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: BureauGrotCondensed;
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://cdn-prod.mytutor.co.uk/shared-assets/fonts/Bureau-Grot-Condensed-Medium.woff2")
+      format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "brandIcons2019";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.mytutor.co.uk/fonts/brand-2019-v1.woff") format("woff");
+  }
+  
