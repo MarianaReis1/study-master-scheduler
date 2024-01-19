@@ -10,6 +10,9 @@ export async function GET() {
       model: "gpt-4-1106-preview",
       temperature: 0.5,
       top_p: 0.8,
+      response_format: {
+        "type": "json_object"
+      }
     },
   });
 
