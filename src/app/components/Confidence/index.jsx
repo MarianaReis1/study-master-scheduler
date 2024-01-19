@@ -6,6 +6,7 @@ import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied
 import SentimentSatisfiedIcon from "@mui/icons-material/SentimentSatisfied";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAltOutlined";
 import SentimentVerySatisfiedIcon from "@mui/icons-material/SentimentVerySatisfied";
+import Image from "next/image";
 
 const StyledRating = styled(Rating)(({ theme }) => ({
   "& .MuiRating-iconEmpty .MuiSvgIcon-root": {
@@ -82,6 +83,15 @@ export default function Confidence() {
           IconContainerComponent={IconContainer}
           getLabelText={(value) => customIcons[value].label}
           highlightSelectedOnly
+        />
+      </Stack>
+
+      <Stack alignItems={"center"} mt={2} mb={2}>
+        <Image
+          src={`/illustration4.png`}
+          alt="MyTutor"
+          width={350}
+          height={50}
         />
       </Stack>
     </>

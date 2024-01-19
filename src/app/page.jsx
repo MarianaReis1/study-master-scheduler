@@ -19,6 +19,7 @@ import Grades from "./components/Grades";
 import Confidence from "./components/Confidence";
 import Completed from "./components/Completed";
 import { response } from "./exampleResponse";
+import Image from "next/image";
 
 async function getData() {
   const res = await fetch("/api");
@@ -61,6 +62,8 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [selectedStep, setSelectedStep] = useState(0);
 
+  const rows = response.plan;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     getResults();
@@ -78,17 +81,23 @@ export default function Home() {
     }, 2000);
   };
 
-  const rows = response.plan;
-
   return (
     <>
       {results ? (
         <main>
           <Typography variant="h3" textAlign={"center"} mb={2}>
-            Here is your table
+            Here is your revision timetable
           </Typography>
+          <Stack alignItems={"center"} mt={2} mb={2}>
+            <Image
+              src={`/illustration6.png`}
+              alt="MyTutor"
+              width={350}
+              height={50}
+            />
+          </Stack>
           <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 396 }} aria-label="simple table">
+            <Table sx={{ minWidth: 360 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
                   <TableCell>Date</TableCell>
@@ -127,6 +136,12 @@ export default function Home() {
             {selectedStep === 4 && <Completed />}
             {selectedStep === steps.length - 1 ? (
               <>
+                <Button type="submit" color="secondary" fullWidth sx={{marginBottom: '16px'}}>
+                  Add new subject
+                </Button>
+                <Button type="submit" fullWidth>
+                  {loading ? "Loading" : "Generate your plan"}
+                </Button>
                 {loading && (
                   <Stack
                     mt={3}
@@ -137,19 +152,16 @@ export default function Home() {
                     <Loader />
                   </Stack>
                 )}
-                <Button type="submit" fullWidth>
-                  {loading ? "Loading" : "Calculate time needed"}
-                </Button>
               </>
             ) : (
               <Stack
                 direction="row"
                 justifyContent="space-between"
-                marginTop={10}
+                marginTop={2}
               >
                 {selectedStep !== 0 ? (
                   <Button onClick={() => setSelectedStep((prev) => prev - 1)}>
-                    Return
+                    Previous
                   </Button>
                 ) : (
                   <div></div>

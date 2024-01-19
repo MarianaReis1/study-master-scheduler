@@ -1,4 +1,5 @@
-import { TextField } from "@mui/material";
+import Image from "next/image";
+import { TextField, Stack } from "@mui/material";
 
 export default function Grades() {
   return (
@@ -17,6 +18,15 @@ export default function Grades() {
         sx={{ marginBottom: "16px" }}
         fullWidth
       />
+
+      <Stack alignItems={"center"} mt={2} mb={2}>
+        <Image
+          src={`/illustration3.png`}
+          alt="MyTutor"
+          width={350}
+          height={30}
+        />
+      </Stack>
     </>
   );
 }

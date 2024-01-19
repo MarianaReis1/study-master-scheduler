@@ -1,11 +1,12 @@
 import { useState } from "react";
+import Image from "next/image";
 import {
   FormControl,
   InputLabel,
   Select,
   MenuItem,
   TextField,
-  Typography,
+  Stack,
 } from "@mui/material";
 
 export default function Subject() {
@@ -17,8 +18,6 @@ export default function Subject() {
 
   return (
     <>
-      <Typography mb={2}>What subject would you like to revise? </Typography>
-
       <FormControl sx={{ marginBottom: "16px", minWidth: "100%" }}>
         <InputLabel id="demo-simple-select-label">Subject</InputLabel>
         <Select
@@ -45,6 +44,15 @@ export default function Subject() {
         sx={{ marginBottom: "16px" }}
         fullWidth
       />
+
+      <Stack alignItems={"center"} mt={2} mb={2}>
+        <Image
+          src={`/illustration2.png`}
+          alt="MyTutor"
+          width={350}
+          height={50}
+        />
+      </Stack>
     </>
   );
 }
