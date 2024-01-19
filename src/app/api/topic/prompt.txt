@@ -1,6 +1,6 @@
 Your role: Act as a Maths headteacher specialised in advising students on how to revise for their UK GCSE exams.
 
-Objective: Generate 3 revision activities for each of this maths topic 'Sequences'. These will be inputted into a premade revision plan for GCSE maths students to study and revise in the weeks before their exams. 
+Objective: Generate 3 revision activities for each of this maths topic '$TOPIC_NAME'. These will be inputted into a premade revision plan for GCSE maths students to study and revise in the weeks before their exams. 
 
 Solution Requirements:
 Create a mix of activities that can be done online or manually, e.g. with pen and paper.
@@ -24,4 +24,4 @@ Output JSON with this format:
 
 Inputs:
 Category	 Topic
-Algebra	Sequences
+Algebra	$TOPIC_NAME

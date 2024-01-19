@@ -21,7 +21,7 @@ import Completed from "./components/Completed";
 import { response } from "./exampleResponse";
 
 async function getData() {
-  const res = await fetch("/api/topic");
+  const res = await fetch("/api");
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -45,7 +45,7 @@ const initialState = {
 };
 
 const steps = [
-  { stepName: "EXAMS_DATE", title: "When do have your exams?" },
+  { stepName: "EXAMS_DATE", title: "When do you have your exams?" },
   { stepName: "SUBJECT", title: "Which subject would you like to revise?" },
   { stepName: "GRADES", title: "Tell us about your grades." },
   {
@@ -104,7 +104,7 @@ export default function Home() {
                     <TableCell align="right">{row.s}</TableCell>
                     <TableCell align="right">{row.t}</TableCell>
                     <TableCell align="right">
-                      <Link href="/activity">
+                      <Link href={`/activity?topic=${row.t}`}>
                         <Button>Activity ideas</Button>
                       </Link>
                     </TableCell>
