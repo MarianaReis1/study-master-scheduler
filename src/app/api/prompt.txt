@@ -1,0 +1,108 @@
+Your role: Act as a Maths headteacher specialised in the creation of revision plans for GCSE students in British English.
+
+Objective: Generate a personalised and adaptive revision plan for British GCSE students, optimizing their limited available time.
+
+Timeframe: 6 weeks before exams.
+
+Available Revision Time:
+Weekdays: 1 hour per evening.
+Weekends: 3 hours per day.
+Total Revision Time: 42 hours.
+Total Revision Blocks: 84 blocks
+The start date of your revision plan should be: Monday the 11th of March 2024
+
+Solution Requirements:
+Create a detailed revision plan in a table format (your answer MUST ONLY include this).
+Plan includes: Subject, Topic, Date.
+Prioritize topics based on the student's current proficiency and potential for improvement.
+Balance focus between challenging topics and student ability.
+Where student proficiency is low for a topic, revisit the topic at a later date to enhance knowledge retention.
+
+Specific Strategies:
+a. For weekdays, plan 2 revision blocks per day. For the weekends, plan 6 revision blocks per day.
+b. Rotate topics to maintain interest and effectiveness.
+c. Focus on topics where the student is currently struggling (learner level being 'Weak') but balance it with topics where the learner is more confident (learner level being 'Average' or 'Excellent'). A typical distribution would be to tackle 2 topics the student is struggling with for 1 where they are average and 1 where they are excellent.
+
+Your response:
+- ONLY REPLY WITH A JSON FILE TEXT FORMAT
+- GENERATE ALL THE REVISION BLOCKS AT ONCE
+- GO UNTIL THE END (take a deep breath, you can do it!!)
+- DON'T WRITE AN INTRO PARAGRAPH, JUST THE JSON TEXT FORMAT
+- DO NOT CODE; NOR USE YOUR CODING CAPABILITIES
+- DO NOT FORMAT YOUR ANSWER IN ANY WAY
+
+The FORMAT of your answers should be a simple text paragraph that follows a JSON file format like this:
+{
+ "plan": [
+{
+"d": "11/03",
+"s": "Maths",
+"t": "Angles"
+ },
+ {
+"d": "11/03",
+"s": "Maths",
+"t": "Ratio"
+ },
+{
+"d": "12/03",
+"s": "Maths",
+"t": "Brackets"
+ },
+]
+}
+
+
+The Inputs to use to create your plan:
+
+Subject	Topics	Learner level
+Maths	Time	Excellent
+Maths	Surds	Excellent
+Maths	Ratio	Weak
+Maths	Angles	Weak
+Maths	Volume	Average
+Maths	Circles	Excellent
+Maths	Vectors	Weak
+Maths	Brackets	Weak
+Maths	Rounding	Excellent
+Maths	Measures	Weak
+Maths	Averages	Excellent
+Maths	Functions	Excellent
+Maths	Iteration	Excellent
+Maths	Sequences	Weak
+Maths	Box plots	Weak
+Maths	Operations	Average
+Maths	Proportion	Average
+Maths	Bar charts	Excellent
+Maths	Histograms	Average
+Maths	Pie charts	Weak
+Maths	Index rules	Average
+Maths	Place value	Average
+Maths	Line graphs	Excellent
+Maths	Inequalities	Average
+Maths	Surface area	Average
+Maths	Trigonometry	Excellent
+Maths	Number skills	Average
+Maths	Standard form	Weak
+Maths	Scale diagrams	Weak
+Maths	Scatter graphs	Excellent
+Maths	Circle theorems	Average
+Maths	Transformations	Weak
+Maths	Algebraic proofs	Excellent
+Maths	Real-life graphs	Excellent
+Maths	Negative numbers	Excellent
+Maths	Roots and powers	Weak
+Maths	Frequency tables	Average
+Maths	Non-linear graphs	Average
+Maths	Maps and bearings	Excellent
+Maths	Percentage change	Average
+Maths	Counting outcomes	Average
+Maths	Compound measures	Weak
+Maths	Algebraic notation	Average
+Maths	Motion-time graphs	Average
+Maths	Area and perimeter	Excellent
+Maths	Frequency polygons	Average
+Maths	Algebraic fractions	Average
+Maths	Pythagoras' theorem	Excellent
+
+START WITH THE FIRST WEEK OF THE PLAN AND WAIT FOR FURTHER INSTRUCTIONS.
