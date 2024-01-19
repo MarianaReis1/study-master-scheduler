@@ -1,8 +1,11 @@
 import { ChatGPTAPI } from "chatgpt";
-import { promises as fs } from 'fs';
+import { promises as fs } from "fs";
 
 export async function GET() {
-  const prompt = await fs.readFile(process.cwd() + '/src/app/api/prompt.txt', 'utf8');
+  const prompt = await fs.readFile(
+    process.cwd() + "/src/app/api/prompt.txt",
+    "utf8",
+  );
   console.log(prompt);
   const api = new ChatGPTAPI({
     apiKey: process.env.OPENAI_API_KEY,
@@ -11,8 +14,8 @@ export async function GET() {
       temperature: 0.5,
       top_p: 0.8,
       response_format: {
-        "type": "json_object"
-      }
+        type: "json_object",
+      },
     },
   });
 

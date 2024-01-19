@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Link, Stack, Container } from "@mui/material";
+import { Button, Link, Stack, Container } from "@mui/material";
 import { ThemeRegistry } from "./components/ThemeRegistry/index";
 import Colors from "@mytutor/mytutor-design-system/styles/tokens/colors";
 import "./styles/globals.css";
@@ -28,18 +28,19 @@ export default function RootLayout({ children }) {
               direction="row"
               gap={2}
               justifyContent="space-between"
+              alignItems="center"
               sx={{
                 marginBottom: "16px",
-                px: 2,
                 py: 2,
                 zIndex: 2,
               }}
             >
+              <Button>Menu</Button>
               <Link href="/">
                 <Image
                   src={`/logo.svg`}
                   alt="MyTutor"
-                  width={110}
+                  width={100}
                   height={36}
                 />
               </Link>

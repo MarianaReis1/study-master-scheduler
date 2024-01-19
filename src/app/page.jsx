@@ -1,12 +1,24 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
-import { Box, Button, Card, CardHeader, CardContent, Container, Loader, Stack, Typography } from "@mui/material";
+import { Box, Button, Card, CardHeader, CardContent, Container, Stack, Typography } from "@mui/material";
+import Loader from "@mytutor/mytutor-design-system/components/Loader";
+import {
+  TableContainer,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  Paper,
+} from "@mui/material";
 import ExamsDate from "./components/ExamsDate";
 import Subject from "./components/Subject";
 import Grades from "./components/Grades";
 import Confidence from "./components/Confidence";
 import Completed from "./components/Completed";
+import { response } from "./exampleResponse";
 
 async function getData() {
   const res = await fetch("/api/topic");
@@ -43,14 +55,6 @@ const steps = [
   { stepName: "COMPLETED", title: "Well done" },
 ];
 
-const Activities = ({ activities }) => {
-  return activities.map((activity, i) => (
-    <Card>
-      <CardHeader title={`Activity idea ${i + 1}`} />
-      <CardContent>{activity}</CardContent>
-    </Card>
-  ))
-}
 
 export default function Home() {
   const [results, setResults] = useState(null);
@@ -66,54 +70,98 @@ export default function Home() {
 
   const getResults = async () => {
     setLoading(true);
-    const data = await getData();
-
-    setResults(JSON.parse(data.text));
-    setLoading(false);
+    // const data = await getData();
+    const data = response;
+    setTimeout(() => {
+      setResults(data.plan);
+      setLoading(false);
+    }, 2000);
   };
 
+  const rows = response.plan;
+
   return (
-    <Container component="main">
-      <Typography variant="h2" mb={4}>
-        {steps[selectedStep].title}
-      </Typography>
-      <form onSubmit={handleSubmit}>
-        {selectedStep === 0 && <ExamsDate />}
-        {selectedStep === 1 && <Subject />}
-        {selectedStep === 2 && <Grades />}
-        {selectedStep === 3 && <Confidence />}
-        {selectedStep === 4 && <Completed />}
-
-        {selectedStep === steps.length - 1 ? (
-          <>
-            <Button type="submit" fullWidth>
-              {loading ? "Loading" : "Calculate time needed"}
-            </Button>
-            {/* {loading && <Loader />} */}
-          </>
-          )
-         : (
-          <Stack direction="row" justifyContent="space-between" marginTop={10}>
-            {selectedStep !== 0 ? (
-              <Button onClick={() => setSelectedStep((prev) => prev - 1)}>
-                Return
-              </Button>
+    <>
+      {results ? (
+        <main>
+          <Typography variant="h3" textAlign={"center"} mb={2}>
+            Here is your table
+          </Typography>
+          <TableContainer component={Paper}>
+            <Table sx={{ minWidth: 396 }} aria-label="simple table">
+              <TableHead>
+                <TableRow>
+                  <TableCell>Date</TableCell>
+                  <TableCell align="right">Subject</TableCell>
+                  <TableCell align="right">Topic</TableCell>
+                  <TableCell align="center">Activity ideas</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {rows.map((row, index) => (
+                  <TableRow key={index}>
+                    <TableCell>{row.d}</TableCell>
+                    <TableCell align="right">{row.s}</TableCell>
+                    <TableCell align="right">{row.t}</TableCell>
+                    <TableCell align="right">
+                      <Link href="/activity">
+                        <Button>Activity ideas</Button>
+                      </Link>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </main>
+      ) : (
+        <main>
+          <Typography variant="h2" mb={4}>
+            {steps[selectedStep].title}
+          </Typography>
+          <form onSubmit={handleSubmit}>
+            {selectedStep === 0 && <ExamsDate />}
+            {selectedStep === 1 && <Subject />}
+            {selectedStep === 2 && <Grades />}
+            {selectedStep === 3 && <Confidence />}
+            {selectedStep === 4 && <Completed />}
+            {selectedStep === steps.length - 1 ? (
+              <>
+                {loading && (
+                  <Stack
+                    mt={3}
+                    mb={3}
+                    direction={"row"}
+                    justifyContent={"center"}
+                  >
+                    <Loader />
+                  </Stack>
+                )}
+                <Button type="submit" fullWidth>
+                  {loading ? "Loading" : "Calculate time needed"}
+                </Button>
+              </>
             ) : (
-              <div></div>
+              <Stack
+                direction="row"
+                justifyContent="space-between"
+                marginTop={10}
+              >
+                {selectedStep !== 0 ? (
+                  <Button onClick={() => setSelectedStep((prev) => prev - 1)}>
+                    Return
+                  </Button>
+                ) : (
+                  <div></div>
+                )}
+                <Button onClick={() => setSelectedStep((prev) => prev + 1)}>
+                  Next
+                </Button>
+              </Stack>
             )}
-
-            <Button onClick={() => setSelectedStep((prev) => prev + 1)}>
-              Next
-            </Button>
-          </Stack>
-        )}
-      </form>
-
-      {results && (
-        <Stack spacing={3}>
-          <Activities activities={results.activities} />
-        </Stack>
+          </form>
+        </main>
       )}
-    </Container>
+    </>
   );
 }
