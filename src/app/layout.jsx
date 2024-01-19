@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         }}
       >
         <ThemeRegistry>
-          <Container maxWidth="xs" margin="auto">
+          <Container maxWidth="sm" margin="auto">
             <Stack
               component="header"
               direction="row"

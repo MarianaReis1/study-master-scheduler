@@ -57,7 +57,7 @@ export default function ActivityPage({ searchParams }) {
     return (
         <Stack spacing={3} alignItems="center">
             {loading ? (<Loader />) : (<>
-                <Typography variant="h1">Today's activities</Typography>
+                <Typography variant="h1">Today&apos;s activities</Typography>
                 <Activities activities={results.activities}/>
             </>)}
         </Stack> 

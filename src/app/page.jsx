@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-import { Box, Button, Card, CardHeader, CardContent, Container, Stack, Typography } from "@mui/material";
+import {  Button, Stack, Typography } from "@mui/material";
 import Loader from "@mytutor/mytutor-design-system/components/Loader";
 import {
   TableContainer,
@@ -97,7 +97,7 @@ export default function Home() {
             />
           </Stack>
           <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 360 }} aria-label="simple table">
+            <Table sx={{ minWidth: 300 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
                   <TableCell>Date</TableCell>
