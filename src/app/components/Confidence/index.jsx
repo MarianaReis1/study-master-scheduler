@@ -47,8 +47,8 @@ export default function Confidence() {
       <Stack spacing={1} mb={2}>
         <Typography component="legend">Mathematical fluency</Typography>
         <StyledRating
-          name="highlight-selected-only"
-          defaultValue={3}
+          name="test"
+          defaultValue={2}
           IconContainerComponent={IconContainer}
           getLabelText={(value) => customIcons[value].label}
           highlightSelectedOnly
@@ -57,7 +57,7 @@ export default function Confidence() {
       <Stack spacing={1} mb={2}>
         <Typography component="legend">Problem Solving</Typography>
         <StyledRating
-          name="highlight-selected-only"
+          name="test-2"
           defaultValue={3}
           IconContainerComponent={IconContainer}
           getLabelText={(value) => customIcons[value].label}
@@ -67,8 +67,8 @@ export default function Confidence() {
       <Stack spacing={1} mb={2}>
         <Typography component="legend">Using Mathematical Notation</Typography>
         <StyledRating
-          name="highlight-selected-only"
-          defaultValue={3}
+          name="test-3"
+          defaultValue={4}
           IconContainerComponent={IconContainer}
           getLabelText={(value) => customIcons[value].label}
           highlightSelectedOnly
@@ -77,8 +77,8 @@ export default function Confidence() {
       <Stack spacing={1} mb={2}>
         <Typography component="legend">Exam Technique</Typography>
         <StyledRating
-          name="highlight-selected-only"
-          defaultValue={3}
+          name="test-4"
+          defaultValue={1}
           IconContainerComponent={IconContainer}
           getLabelText={(value) => customIcons[value].label}
           highlightSelectedOnly

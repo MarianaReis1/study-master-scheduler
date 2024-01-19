@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Loader, Stack, Typography } from "@mui/material";
 import ExamsDate from "./components/ExamsDate";
 import Subject from "./components/Subject";
 import Grades from "./components/Grades";
@@ -76,10 +76,14 @@ export default function Home() {
         {selectedStep === 4 && <Completed />}
 
         {selectedStep === steps.length - 1 ? (
-          <Button type="submit" fullWidth>
-            {loading ? "Loading" : "Calculate time needed"}
-          </Button>
-        ) : (
+          <>
+            <Button type="submit" fullWidth>
+              {loading ? "Loading" : "Calculate time needed"}
+            </Button>
+            {loading && <Loader />}
+          </>
+          )
+         : (
           <Stack direction="row" justifyContent="space-between" marginTop={10}>
             {selectedStep !== 0 ? (
               <Button onClick={() => setSelectedStep((prev) => prev - 1)}>
