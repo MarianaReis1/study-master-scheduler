@@ -96,7 +96,7 @@ export default function Home() {
             />
           </Stack>
           <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 396 }} aria-label="simple table">
+            <Table sx={{ minWidth: 360 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
                   <TableCell>Date</TableCell>
