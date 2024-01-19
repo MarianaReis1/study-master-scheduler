@@ -85,7 +85,7 @@ export default function Home() {
       {results ? (
         <main>
           <Typography variant="h3" textAlign={"center"} mb={2}>
-            Here is your table
+            Here is your revision timetable
           </Typography>
           <Stack alignItems={"center"} mt={2} mb={2}>
             <Image
@@ -129,6 +129,12 @@ export default function Home() {
             {selectedStep === 4 && <Completed />}
             {selectedStep === steps.length - 1 ? (
               <>
+                <Button type="submit" color="secondary" fullWidth sx={{marginBottom: '16px'}}>
+                  Add new subject
+                </Button>
+                <Button type="submit" fullWidth>
+                  {loading ? "Loading" : "Generate your plan"}
+                </Button>
                 {loading && (
                   <Stack
                     mt={3}
@@ -139,9 +145,6 @@ export default function Home() {
                     <Loader />
                   </Stack>
                 )}
-                <Button type="submit" fullWidth>
-                  {loading ? "Loading" : "Calculate time needed"}
-                </Button>
               </>
             ) : (
               <Stack

@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
                 zIndex: 2,
               }}
             >
-              <Button>Menu</Button>
+              <Button color="secondary">Menu</Button>
               <Link href="/">
                 <Image
                   src={`/logo.svg`}

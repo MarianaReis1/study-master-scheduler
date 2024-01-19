@@ -6,7 +6,6 @@ import {
   Select,
   MenuItem,
   TextField,
-  Typography,
   Stack,
 } from "@mui/material";
 
@@ -19,8 +18,6 @@ export default function Subject() {
 
   return (
     <>
-      <Typography mb={2}>What subject would you like to revise? </Typography>
-
       <FormControl sx={{ marginBottom: "16px", minWidth: "100%" }}>
         <InputLabel id="demo-simple-select-label">Subject</InputLabel>
         <Select
