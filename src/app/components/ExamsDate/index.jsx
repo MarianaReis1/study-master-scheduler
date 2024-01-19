@@ -1,4 +1,5 @@
-import { Button, Container, Stack, Typography } from "@mui/material";
+import Image from "next/image";
+import { Stack } from "@mui/material";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import "dayjs/locale/en-gb";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -19,6 +20,15 @@ export default function ExamsDate() {
           sx={{ marginBottom: "16px" }}
         />
       </LocalizationProvider>
+
+      <Stack alignItems={"center"} mt={2} mb={2}>
+        <Image
+          src={`/illustration1.png`}
+          alt="MyTutor"
+          width={350}
+          height={50}
+        />
+      </Stack>
     </Stack>
   );
 }

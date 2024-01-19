@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-
 import Loader from "@mytutor/mytutor-design-system/components/Loader";
 import {
   TableContainer,
@@ -20,6 +19,7 @@ import Grades from "./components/Grades";
 import Confidence from "./components/Confidence";
 import Completed from "./components/Completed";
 import { response } from "./exampleResponse";
+import Image from "next/image";
 
 async function getData() {
   const res = await fetch("/api");
@@ -61,6 +61,8 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [selectedStep, setSelectedStep] = useState(0);
 
+  const rows = response.plan;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     getResults();
@@ -78,8 +80,6 @@ export default function Home() {
     }, 2000);
   };
 
-  const rows = response.plan;
-
   return (
     <>
       {results ? (
@@ -87,6 +87,14 @@ export default function Home() {
           <Typography variant="h3" textAlign={"center"} mb={2}>
             Here is your table
           </Typography>
+          <Stack alignItems={"center"} mt={2} mb={2}>
+            <Image
+              src={`/illustration6.png`}
+              alt="MyTutor"
+              width={350}
+              height={50}
+            />
+          </Stack>
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 396 }} aria-label="simple table">
               <TableHead>
@@ -139,11 +147,11 @@ export default function Home() {
               <Stack
                 direction="row"
                 justifyContent="space-between"
-                marginTop={10}
+                marginTop={2}
               >
                 {selectedStep !== 0 ? (
                   <Button onClick={() => setSelectedStep((prev) => prev - 1)}>
-                    Return
+                    Previous
                   </Button>
                 ) : (
                   <div></div>
