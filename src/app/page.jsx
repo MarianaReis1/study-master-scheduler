@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
+
+import { Box, Button, Card, CardHeader, CardContent, Container, Stack, Typography } from "@mui/material";
 import Loader from "@mytutor/mytutor-design-system/components/Loader";
 import {
   TableContainer,
@@ -9,9 +12,6 @@ import {
   TableHead,
   TableRow,
   Paper,
-  Button,
-  Stack,
-  Typography,
 } from "@mui/material";
 import ExamsDate from "./components/ExamsDate";
 import Subject from "./components/Subject";
@@ -46,7 +46,7 @@ const initialState = {
 };
 
 const steps = [
-  { stepName: "EXAMS_DATE", title: "When do have your exams?" },
+  { stepName: "EXAMS_DATE", title: "When do you have your exams?" },
   { stepName: "SUBJECT", title: "Which subject would you like to revise?" },
   { stepName: "GRADES", title: "Tell us about your grades." },
   {
@@ -55,6 +55,7 @@ const steps = [
   },
   { stepName: "COMPLETED", title: "Well done" },
 ];
+
 
 export default function Home() {
   const [results, setResults] = useState(null);
@@ -102,6 +103,7 @@ export default function Home() {
                   <TableCell>Date</TableCell>
                   <TableCell align="right">Subject</TableCell>
                   <TableCell align="right">Topic</TableCell>
+                  <TableCell align="center">Activity ideas</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -110,6 +112,11 @@ export default function Home() {
                     <TableCell>{row.d}</TableCell>
                     <TableCell align="right">{row.s}</TableCell>
                     <TableCell align="right">{row.t}</TableCell>
+                    <TableCell align="right">
+                      <Link href={`/activity?topic=${row.t}`}>
+                        <Button>Activity ideas</Button>
+                      </Link>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
