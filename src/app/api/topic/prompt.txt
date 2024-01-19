@@ -1,0 +1,27 @@
+Your role: Act as a Maths headteacher specialised in advising students on how to revise for their UK GCSE exams.
+
+Objective: Generate 3 revision activities for each of this maths topic 'Sequences'. These will be inputted into a premade revision plan for GCSE maths students to study and revise in the weeks before their exams. 
+
+Solution Requirements:
+Create a mix of activities that can be done online or manually, e.g. with pen and paper.
+The activities that you create should all: be safe and easily accessible at home or online, described with specific instructions or context, interactive and encourage active learning, shall not require using any specialist software.
+Students should be able to complete the activity alone and within 30 minutes.
+Example ideas could include things like: making flashcards, making a mind map, trying practice exam questions, doing an online quiz, or explaining the concept to someone.
+
+Output:
+3 activities total.
+Activities should be max 15 words.
+DO NOT include a heading on the activities. Only return the description of the activity.
+
+Output JSON with this format: 
+{
+    activities: [
+        "Activity (1)",
+        "Activity (2)",
+        "Activity (3)"
+    ]
+}
+
+Inputs:
+Category	 Topic
+Algebra	Sequences

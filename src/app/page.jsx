@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import { Box, Button, Container, Loader, Stack, Typography } from "@mui/material";
+import { Box, Button, Card, CardHeader, CardContent, Container, Loader, Stack, Typography } from "@mui/material";
 import ExamsDate from "./components/ExamsDate";
 import Subject from "./components/Subject";
 import Grades from "./components/Grades";
@@ -9,7 +9,7 @@ import Confidence from "./components/Confidence";
 import Completed from "./components/Completed";
 
 async function getData() {
-  const res = await fetch("/api");
+  const res = await fetch("/api/topic");
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -43,6 +43,15 @@ const steps = [
   { stepName: "COMPLETED", title: "Well done" },
 ];
 
+const Activities = ({ activities }) => {
+  return activities.map((activity, i) => (
+    <Card>
+      <CardHeader title={`Activity idea ${i + 1}`} />
+      <CardContent>{activity}</CardContent>
+    </Card>
+  ))
+}
+
 export default function Home() {
   const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -59,7 +68,7 @@ export default function Home() {
     setLoading(true);
     const data = await getData();
 
-    setResults(data.text);
+    setResults(JSON.parse(data.text));
     setLoading(false);
   };
 
@@ -80,7 +89,7 @@ export default function Home() {
             <Button type="submit" fullWidth>
               {loading ? "Loading" : "Calculate time needed"}
             </Button>
-            {loading && <Loader />}
+            {/* {loading && <Loader />} */}
           </>
           )
          : (
@@ -100,7 +109,11 @@ export default function Home() {
         )}
       </form>
 
-      {results && <Box>{results}</Box>}
+      {results && (
+        <Stack spacing={3}>
+          <Activities activities={results.activities} />
+        </Stack>
+      )}
     </Container>
   );
 }
