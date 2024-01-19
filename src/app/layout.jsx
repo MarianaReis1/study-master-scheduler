@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Link, Stack, Typography } from "@mui/material";
+import { Link, Stack, Container } from "@mui/material";
 import { ThemeRegistry } from "./components/ThemeRegistry/index";
 import Colors from "@mytutor/mytutor-design-system/styles/tokens/colors";
 import "./styles/globals.css";
@@ -16,31 +16,36 @@ export default function RootLayout({ children }) {
       <body
         style={{
           backgroundColor: Colors.sand[30],
+          maxWidth: "592px",
+          margin: "auto",
+          padding: "16px",
         }}
       >
         <ThemeRegistry>
-          <Stack
-            component="header"
-            direction="row"
-            gap={2}
-            justifyContent="space-between"
-            sx={{
-              position: "sticky",
-              top: 0,
-              width: "100%",
-              px: 4,
-              py: 2,
-              backgroundColor: "secondary.light",
-              zIndex: 2,
-            }}
-          >
-            <Link href="/">
-              <Image src={`/logo.svg`} alt="MyTutor" width={100} height={36} />
-            </Link>
-            <Typography>Study Master Scheduler</Typography>
-          </Stack>
-
-          {children}
+          <Container maxWidth="xs" margin="auto">
+            <Stack
+              component="header"
+              direction="row"
+              gap={2}
+              justifyContent="space-between"
+              sx={{
+                marginBottom: "16px",
+                px: 2,
+                py: 2,
+                zIndex: 2,
+              }}
+            >
+              <Link href="/">
+                <Image
+                  src={`/logo.svg`}
+                  alt="MyTutor"
+                  width={110}
+                  height={36}
+                />
+              </Link>
+            </Stack>
+            {children}
+          </Container>
         </ThemeRegistry>
       </body>
     </html>
